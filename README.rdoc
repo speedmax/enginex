@@ -8,6 +8,18 @@ Enginex is going to be used in José Valim's upcoming book for Rails 3.
 
   $ enginex ENGINE_NAME
 
+
+== Rails 3.0.0.beta
+
+Add following in test/dummy/config/application.rb as Workaround the config path bug in rails 3 beta
+
+    class Application < Rails::Application
+      ...
+      config.root = File.expand_path("../..", __FILE__)   # Work around
+      ...
+    end
+  
+
 == Bugs and Feedback
 
 If you discover any bugs, feel free to send me a message or create an issue on GitHub tracker:
