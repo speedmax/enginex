@@ -6,7 +6,7 @@ Enginex is going to be used in José Valim's upcoming book for Rails 3.
 
 == Usage
 
-  $ enginex ENGINE_NAME
+  $ enginex ENGINE_NAME --test_framework=rspec
 
 
 == Rails 3.0.0.beta
